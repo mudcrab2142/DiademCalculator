@@ -1,2 +1,2 @@
 # DiademCalculator
-xiv diadem points calculator addon
+xiv diadem points calculator plugin
