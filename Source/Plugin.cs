@@ -186,6 +186,7 @@ namespace DiademCalculator
 
         private bool configOpened;
         private DateTime lastUpdate;
+        private int updatePresetIndex;
         private int minPoints, btnPoints, fshPoints;
         private int minScrips, btnScrips, fshScrips;
 
@@ -247,9 +248,23 @@ namespace DiademCalculator
 
             if ((DateTime.Now - lastUpdate).TotalMilliseconds > 50)
             {
-                CalculatePoints(_minerPreset, out minPoints, out minScrips);
-                CalculatePoints(_botanistPreset, out btnPoints, out btnScrips);
-                CalculatePoints(_fisherPreset, out fshPoints, out fshScrips);
+                switch (updatePresetIndex)
+                {
+                    case 0:
+                        CalculatePoints(_minerPreset, out minPoints, out minScrips);
+                        break;
+                    case 1:
+                        CalculatePoints(_botanistPreset, out btnPoints, out btnScrips);
+                        break;
+                    case 2:
+                        CalculatePoints(_fisherPreset, out fshPoints, out fshScrips);
+                        break;
+                }
+
+                updatePresetIndex++;
+                if (updatePresetIndex > 2)
+                    updatePresetIndex = 0;
+
                 lastUpdate = DateTime.Now;
             }
 
