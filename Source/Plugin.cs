@@ -92,7 +92,6 @@ namespace DiademCalculator
             new DiademResourceInfo(32017, 5, 2, 0),  //Grade 4 Skybuilders' Toad
             new DiademResourceInfo(32018, 5, 2, 0),  //Grade 4 Skybuilders' Vine
             new DiademResourceInfo(32019, 5, 2, 0),  //Grade 4 Skybuilders' Tea Leaves
-
             new DiademResourceInfo(32025, 5, 3, 13), //Grade 4 Skybuilders' White Cedar Log
             new DiademResourceInfo(32026, 5, 3, 13), //Grade 4 Skybuilders' Primordial Resin
             new DiademResourceInfo(32027, 5, 3, 13), //Grade 4 Skybuilders' Wheat
@@ -110,17 +109,61 @@ namespace DiademCalculator
 
         static readonly List<DiademResourceInfo> _fisherPreset = new List<DiademResourceInfo>()
         {
+            new DiademResourceInfo(30008, 1, 0, 15),     //Grade 2 Artisanal Skybuilders' Pterodactyl
+            new DiademResourceInfo(30009, 1, 0, 15),     //Grade 2 Artisanal Skybuilders' Skyfish
+            new DiademResourceInfo(30006, 1, 0, 158),    //Grade 2 Artisanal Skybuilders' Rhomaleosaurus
+            new DiademResourceInfo(30007, 1, 0, 158),    //Grade 2 Artisanal Skybuilders' Gobbie Mask
+            new DiademResourceInfo(30010, 1, 0, 15),     //Grade 2 Artisanal Skybuilders' Cometfish
+            new DiademResourceInfo(30011, 1, 0, 15),     //Grade 2 Artisanal Skybuilders' Anomalocaris
+            new DiademResourceInfo(30012, 1, 0, 15),     //Grade 2 Artisanal Skybuilders' Rhamphorhynchus
+            new DiademResourceInfo(30013, 1, 0, 15),     //Grade 2 Artisanal Skybuilders' Dragon's Soul
 
+            new DiademResourceInfo(31596, 1, 0, 12),     //Grade 3 Artisanal Skybuilders' Oscar
+            new DiademResourceInfo(31597, 1, 0, 22),     //Grade 3 Artisanal Skybuilders' Blind Manta
+            new DiademResourceInfo(31598, 1, 0, 83),     //Grade 3 Artisanal Skybuilders' Mosasaur
+            new DiademResourceInfo(31599, 1, 0, 93),     //Grade 3 Artisanal Skybuilders' Storm Chaser
+            new DiademResourceInfo(31600, 1, 0, 57),     //Grade 3 Artisanal Skybuilders' Archaeopteryx
+            new DiademResourceInfo(31601, 1, 0, 90),     //Grade 3 Artisanal Skybuilders' Wyvern
+            new DiademResourceInfo(31602, 1, 0, 77),     //Grade 3 Artisanal Skybuilders' Cloudshark
+            new DiademResourceInfo(31603, 1, 0, 113),    //Grade 3 Artisanal Skybuilders' Helicoprion
+
+            new DiademResourceInfo(32882, 1, 2, 0),      //Grade 4 Skybuilders' Zagas Khaal
+            new DiademResourceInfo(32883, 1, 2, 0),      //Grade 4 Skybuilders' Goldsmith Crab
+            new DiademResourceInfo(32884, 1, 4, 0),      //Grade 4 Skybuilders' Common Bitterling
+            new DiademResourceInfo(32885, 1, 4, 0),      //Grade 4 Skybuilders' Skyloach
+            new DiademResourceInfo(32886, 1, 4, 0),      //Grade 4 Skybuilders' Glacier Core
+            new DiademResourceInfo(32887, 1, 4, 0),      //Grade 4 Skybuilders' Kissing Fish
+            new DiademResourceInfo(32888, 1, 8, 0),      //Grade 4 Skybuilders' Cavalry Catfish
+            new DiademResourceInfo(32889, 1, 8, 0),      //Grade 4 Skybuilders' Manasail
+            new DiademResourceInfo(32890, 1, 4, 0),      //Grade 4 Skybuilders' Starflower
+            new DiademResourceInfo(32891, 1, 4, 0),      //Grade 4 Skybuilders' Cyan Crab
+            new DiademResourceInfo(32892, 1, 10, 0),     //Grade 4 Skybuilders' Fickle Krait
+            new DiademResourceInfo(32893, 1, 10, 0),     //Grade 4 Skybuilders' Proto-hropken
+            new DiademResourceInfo(32894, 1, 3, 2),      //Grade 4 Skybuilders' Ghost Faerie
+            new DiademResourceInfo(32895, 1, 5, 5),      //Grade 4 Skybuilders' Ashfish
+            new DiademResourceInfo(32896, 1, 10, 8),     //Grade 4 Skybuilders' Whitehorse
+            new DiademResourceInfo(32897, 1, 6, 4),      //Grade 4 Skybuilders' Ocean Cloud
+            new DiademResourceInfo(32898, 1, 12, 10),    //Grade 4 Skybuilders' Black Fanfish
+            new DiademResourceInfo(32899, 1, 12, 10),    //Grade 4 Skybuilders' Sunfish
+            new DiademResourceInfo(32900, 1, 17, 106),   //Grade 4 Artisanal Skybuilders' Sweatfish
+            new DiademResourceInfo(32901, 1, 17, 250),   //Grade 4 Artisanal Skybuilders' Sculptor
+            new DiademResourceInfo(32902, 1, 124, 911),  //Grade 4 Artisanal Skybuilders' Little Thalaos
+            new DiademResourceInfo(32903, 1, 64, 996),   //Grade 4 Artisanal Skybuilders' Lightning Chaser
+            new DiademResourceInfo(32904, 1, 77, 512),   //Grade 4 Artisanal Skybuilders' Marrella
+            new DiademResourceInfo(32905, 1, 45, 542),   //Grade 4 Artisanal Skybuilders' Crimson Namitaro
+            new DiademResourceInfo(32906, 1, 153, 982),  //Grade 4 Artisanal Skybuilders' Griffin
+            new DiademResourceInfo(32907, 1, 126, 1078), //Grade 4 Artisanal Skybuilders' Meganeura
         };
 
+        const int IconScrip = 65073;
+        const int IconMIN = 62116;
+        const int IconBTN = 62117;
+        const int IconFSH = 62118;
 
-        const int Scrip_Icon = 65073;
-        const int MIN_Icon = 62116;
-        const int BTN_Icon = 62117;
-        const int FSH_Icon = 62118;
+        const int TerritoryFirmament = 886;
+        const int TerritoryDiadem = 939;
 
         public string Name => "Diadem Calculator";
-
 
         [PluginService]
         public DalamudPluginInterface PluginInterface { get; init; }
@@ -134,11 +177,14 @@ namespace DiademCalculator
         [PluginService]
         public DataManager DataManager { get; private set; }
 
+        [PluginService]
+        public ClientState ClientState { get; private set; }
+
         private readonly PluginCommandManager<Plugin> commandManager;
         private readonly Configuration config;
         private readonly IconsManager iconsManager;
 
-
+        private bool configOpened;
         private DateTime lastUpdate;
         private int minPoints, btnPoints, fshPoints;
         private int minScrips, btnScrips, fshScrips;
@@ -154,16 +200,18 @@ namespace DiademCalculator
             commandManager = new PluginCommandManager<Plugin>(this, Commands);
             iconsManager = new IconsManager(this);
 
-            iconsManager.LoadIcon(Scrip_Icon);
-            iconsManager.LoadIcon(FSH_Icon);
-            iconsManager.LoadIcon(BTN_Icon);
-            iconsManager.LoadIcon(MIN_Icon);
+            iconsManager.LoadIcon(IconScrip);
+            iconsManager.LoadIcon(IconFSH);
+            iconsManager.LoadIcon(IconBTN);
+            iconsManager.LoadIcon(IconMIN);
         }
 
-        [Command("/diadem")]
+        [Command("/dcalc")]
+        [HelpMessage("Opens Diadem Calculator config menu")]
         public void Settings(string command, string args)
         {
-
+            Chat.Print(ClientState.TerritoryType.ToString());
+            configOpened = !configOpened;
         }
 
         protected virtual void Dispose(bool disposing)
@@ -178,16 +226,24 @@ namespace DiademCalculator
 
         public void Draw()
         {
-            DrawStats();
+            if (configOpened)
+                DrawConfig();
+
+            if (config.ShowOutsideFirmamentAndDiadem || (ClientState.TerritoryType == TerritoryFirmament || ClientState.TerritoryType == TerritoryDiadem))
+                DrawStats();
         }
 
         void DrawStats()
         {
             ImGui.SetNextWindowPos(new Vector2(350, 185), ImGuiCond.FirstUseEver);
-            ImGui.SetNextWindowSize(new Vector2(100, 175), ImGuiCond.Always);
-            ImGui.SetNextWindowBgAlpha(1);
+            ImGui.SetNextWindowSize(new Vector2(120, 175), ImGuiCond.Always);
+            ImGui.SetNextWindowBgAlpha(config.BackgroundAlpha);
 
-            ImGui.Begin("DiademInspector", ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.NoResize);
+            var flags = ImGuiWindowFlags.NoTitleBar | ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoScrollbar;
+            if (config.LockWindow)
+                flags |= ImGuiWindowFlags.NoMouseInputs | ImGuiWindowFlags.NoInputs;
+
+            ImGui.Begin("DiademInspector", flags);
 
             if ((DateTime.Now - lastUpdate).TotalMilliseconds > 50)
             {
@@ -197,16 +253,16 @@ namespace DiademCalculator
                 lastUpdate = DateTime.Now;
             }
 
-            DrawIcon(iconsManager.GetIcon(BTN_Icon), new Vector2(5, 5));
+            DrawIcon(iconsManager.GetIcon(IconBTN), new Vector2(5, 5));
             DrawPoints(new Vector2(50, 10), btnPoints);
 
-            DrawIcon(iconsManager.GetIcon(MIN_Icon), new Vector2(5, 45));
+            DrawIcon(iconsManager.GetIcon(IconMIN), new Vector2(5, 45));
             DrawPoints(new Vector2(50, 50), minPoints);
 
-            DrawIcon(iconsManager.GetIcon(FSH_Icon), new Vector2(5, 85));
+            DrawIcon(iconsManager.GetIcon(IconFSH), new Vector2(5, 85));
             DrawPoints(new Vector2(50, 90), fshPoints);
 
-            DrawIcon(iconsManager.GetIcon(Scrip_Icon), new Vector2(5, 135));
+            DrawIcon(iconsManager.GetIcon(IconScrip), new Vector2(5, 135));
             DrawPoints(new Vector2(50, 140), minScrips + btnScrips + fshScrips);
 
             ImGui.End();
@@ -228,6 +284,28 @@ namespace DiademCalculator
         {
             ImGui.SetCursorPos(localPos);
             ImGui.Text(count.ToString());
+        }
+
+        void DrawConfig()
+        {
+            ImGui.SetNextWindowPos(new Vector2(350, 185), ImGuiCond.FirstUseEver);
+            ImGui.SetNextWindowSize(new Vector2(400, 145), ImGuiCond.Always);
+            ImGui.SetNextWindowBgAlpha(1);
+            ImGui.Begin("Diadem Calculator configuration", ImGuiWindowFlags.NoResize);
+
+            ImGui.SliderFloat("Background Alpha", ref config.BackgroundAlpha, 0, 1);
+            ImGui.Checkbox("Lock Window", ref config.LockWindow);
+            ImGui.Checkbox("Show outside Firmament and Diadem", ref config.ShowOutsideFirmamentAndDiadem);
+
+            if (ImGui.Button("Save and Close"))
+            {
+                config.Save();
+                configOpened = false;
+                ImGui.End();
+                return;
+            }
+
+            ImGui.End();
         }
 
         void CalculatePoints(List<DiademResourceInfo> preset, out int points, out int scrips)

@@ -8,6 +8,10 @@ namespace DiademCalculator
     {
         public int Version { get; set; }
 
+        public float BackgroundAlpha = 1;
+        public bool ShowOutsideFirmamentAndDiadem;
+        public bool LockWindow;
+
         // Add any other properties or methods here.
         [JsonIgnore] private DalamudPluginInterface pluginInterface;
 
